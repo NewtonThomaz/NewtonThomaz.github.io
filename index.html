@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <title>Newton André Thomaz - Desenvolvedor</title>
+    
+    <!-- Tailwind CSS CDN --><script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração do Tailwind --><script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#38BDF8', // Ciano claro
+                        'secondary': '#1E293B', // Azul-acinzentado escuro
+                        'light-text': '#E0E7FF',
+                        'dark-bg': '#0B1120',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts (Inter) --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B1120;
+            color: #E0E7FF;
+            padding-inline: 80px; /* Espaço para o cabeçalho fixo */
+        }
+
+        /* O CSS customizado para os efeitos de circuito foi removido */
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Cabeçalho e Navegação --><header id="header" class="fixed top-0 left-0 w-full z-50 bg-dark-bg/90 backdrop-blur-md shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-primary">Newton Thomaz</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#sobre" class="text-light-text hover:text-primary transition-colors duration-300">Sobre</a>
+                <a href="#habilidades" class="text-light-text hover:text-primary transition-colors duration-300">Habilidades</a>
+                <a href="#projetos" class="text-light-text hover:text-primary transition-colors duration-300">Projetos</a>
+                <a href="#contato" class="text-light-text hover:text-primary transition-colors duration-300">Contato</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-light-text z-30">
+                <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-0 left-0 w-full min-h-screen bg-dark-bg flex flex-col items-center justify-center space-y-6">
+            <a href="#sobre" class="text-light-text hover:text-primary transition-colors duration-300 text-2xl">Sobre</a>
+            <a href="#habilidades" class="text-light-text hover:text-primary transition-colors duration-300 text-2xl">Habilidades</a>
+            <a href="#projetos" class="text-light-text hover:text-primary transition-colors duration-300 text-2xl">Projetos</a>
+            <a href="#contato" class="text-light-text hover:text-primary transition-colors duration-300 text-2xl">Contato</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal --><main class="container mx-auto px-6">
+
+        <!-- Seção Hero (Home) - Design anterior (limpo) -->
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <!-- Os elementos de circuito e brilho foram removidos -->
+            <div class="max-w-3xl"> <!-- A classe 'content-z-index' foi removida -->
+                <span class="text-primary text-3xl md:text-4xl font-bold">Olá, eu sou</span>
+                <h1 class="text-5xl md:text-7xl font-bold my-3">Newton André Thomaz</h1>
+                <h2 class="text-3xl md:text-4xl font-light text-gray-300 mb-6">Desenvolvedor Java & JavaScript</h2>
+                <p class="text-lg text-gray-400 max-w-xl mb-8">
+                    Estou em busca da minha primeira oportunidade (estágio ou júnior) para aplicar meus conhecimentos em APIs RESTful com Java/Spring Boot e interfaces com Next.js/TypeScript.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projetos" class="bg-primary text-dark-bg font-bold py-3 px-6 rounded-lg transition-colors duration-300 hover:bg-opacity-80">Ver Meus Projetos</a>
+                    <a href="https://www.linkedin.com/in/newtonthomaz" target="_blank" class="border border-primary text-primary font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-primary hover:text-dark-bg">Conectar no LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim --><section id="sobre" class="py-24">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3 flex-shrink-0">
+                    <img src="https://placehold.co/400x400/1E293B/38BDF8?text=NAT" alt="Foto de Newton André Thomaz" class="rounded-full shadow-2xl mx-auto border-4 border-primary/50">
+                </div>
+                <div class="w-full md:w-2/3 text-lg text-gray-300 space-y-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-left text-primary">Sobre Mim</h2>
+                    <p>
+                        Sou um desenvolvedor em formação, atualmente cursando o Ensino Médio integrado ao Técnico em Análise e Desenvolvimento de Sistemas no SENAI. Estou focado em construir uma carreira sólida, buscando ativamente minha primeira oportunidade de estágio ou júnior.
+                    </p>
+                    <p>
+                        Meu objetivo é aplicar e expandir meus conhecimentos no desenvolvimento de aplicações robustas. No back-end, meu foco é <span class="text-primary font-medium">Java</span> com <span class="text-primary font-medium">Spring Boot</span> para a criação de APIs RESTful. No front-end, trabalho com <span class="text-primary font-medium">Next.js</span>, <span class="text-primary font-medium">TypeScript</span> e <span class="text-primary font-medium">JavaScript</span> para criar interfaces de usuário modernas e reativas.
+                    </p>
+                    <p>
+                        Além da stack principal, tenho conhecimentos em <span class="text-primary font-medium">Power BI</span> para análise de dados, metodologias ágeis como <span class="text-primary font-medium">Scrum</span> e <span class="text-primary font-medium">Kanban</span>, e um forte interesse em tecnologias emergentes como IA, Web 3.0 e Indústria 4.0.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades --><section id="habilidades" class="py-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Habilidades Técnicas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-secondary p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-center text-primary">Front-End</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">JavaScript (ES6+)</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">TypeScript</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">Next.js</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">Flutter</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">HTML5</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">CSS3</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
+                    </div>
+                </div>
+                
+                <div class="bg-secondary p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-center text-primary">Back-End</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">Java</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">Spring Boot</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">Dart</span>
+                    </div>
+                </div>
+                
+                <div class="bg-secondary p-6 rounded-lg shadow-lg md:col-span-2 lg:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4 text-center text-primary">Dados & Metodologias</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">MySQL</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">PostgreSQL</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">Git</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">Power BI</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">Scrum</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">Kanban</span>
+                        <span class="bg-gray-700 text-sm text-primary font-medium px-3 py-1 rounded-full">Design Thinking</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos --><section id="projetos" class="py-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Meus Projetos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-secondary rounded-lg shadow-xl overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/1E293B/E0E7FF?text=Hackathon+SENAI" alt="Preview do Projeto 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Hackathon SENAI - Lógica</h3>
+                        <p class="text-gray-400 mb-4">
+                            Classificação no Top 5 da competição pelo desenvolvimento de um algoritmo de alta performance em Java 17.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-700 text-primary font-medium px-3 py-1 rounded-full text-xs">Java 17</span>
+                            <span class="bg-gray-700 text-primary font-medium px-3 py-1 rounded-full text-xs">Algoritmos</span>
+                            <span class="bg-gray-700 text-primary font-medium px-3 py-1 rounded-full text-xs">Lógica</span>
+                            <span class="bg-gray-700 text-primary font-medium px-3 py-1 rounded-full text-xs">Eclipse IDE</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/NewtonThomaz" target="_blank" class="border border-primary text-primary font-bold rounded-lg transition-all duration-300 hover:bg-primary hover:text-dark-bg text-sm py-2 px-4">Ver no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary rounded-lg shadow-xl overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/1E293B/E0E7FF?text=Projeto+Back-End" alt="Preview do Projeto 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">API de [Seu Projeto]</h3>
+                        <p class="text-gray-400 mb-4">
+                            (Em breve) Descrição da sua próxima API RESTful, talvez um e-commerce, blog ou sistema de gerenciamento.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-700 text-primary font-medium px-3 py-1 rounded-full text-xs">Java</span>
+                            <span class="bg-gray-700 text-primary font-medium px-3 py-1 rounded-full text-xs">Spring Boot</span>
+                            <span class="bg-gray-700 text-primary font-medium px-3 py-1 rounded-full text-xs">PostgreSQL</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="border border-primary text-primary font-bold rounded-lg transition-all duration-300 hover:bg-primary hover:text-dark-bg text-sm py-2 px-4 opacity-50 cursor-not-allowed">Código</a>
+                            <a href="#" class="bg-primary text-dark-bg font-bold rounded-lg transition-colors duration-300 hover:bg-opacity-80 text-sm py-2 px-4 opacity-50 cursor-not-allowed">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-secondary rounded-lg shadow-xl overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="httpss://placehold.co/600x400/1E293B/E0E7FF?text=Projeto+Front-End" alt="Preview do Projeto 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Dashboard de [Seu Projeto]</h3>
+                        <p class="text-gray-400 mb-4">
+                            (Em breve) Um painel ou interface consumindo a API back-end, mostrando dados ou permitindo interações.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-700 text-primary font-medium px-3 py-1 rounded-full text-xs">Next.js</span>
+                            <span class="bg-gray-700 text-primary font-medium px-3 py-1 rounded-full text-xs">TypeScript</span>
+                            <span class="bg-gray-700 text-primary font-medium px-3 py-1 rounded-full text-xs">Tailwind CSS</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="border border-primary text-primary font-bold rounded-lg transition-all duration-300 hover:bg-primary hover:text-dark-bg text-sm py-2 px-4 opacity-50 cursor-not-allowed">Código</a>
+                            <a href="#" class="bg-primary text-dark-bg font-bold rounded-lg transition-colors duration-300 hover:bg-opacity-80 text-sm py-2 px-4 opacity-50 cursor-not-allowed">Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção Contato --><section id="contato" class="py-24 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Vamos Conversar!</h2>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+                Estou disponível para novas oportunidades e desafios. Vamos construir algo incrível juntos!
+            </p>
+            <a href="mailto:newanth07@gmail.com" class="bg-primary text-dark-bg font-bold py-3 px-6 rounded-lg transition-colors duration-300 hover:bg-opacity-80 text-lg">
+                Enviar um E-mail
+            </a>
+            
+            <div class="flex justify-center space-x-8 mt-12">
+                <a href="https://www.linkedin.com/in/newtonthomaz" target="_blank" class="text-gray-400 hover:text-primary transition-colors" aria-label="LinkedIn">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://github.com/NewtonThomaz" target="_blank" class="text-gray-400 hover:text-primary transition-colors" aria-label="GitHub">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.39c.6.11.82-.26.82-.577c0-.285-.01-1.04-.015-2.04c-3.338.724-4.043-1.61-4.043-1.61c-.546-1.387-1.333-1.756-1.333-1.756c-1.089-.745.083-.729.083-.729c1.205.085 1.839 1.237 1.839 1.237c1.07 1.834 2.807 1.304 3.492.997c.108-.775.418-1.305.762-1.604c-2.665-.303-5.467-1.332-5.467-5.93c0-1.31.469-2.381 1.236-3.221c-.124-.303-.535-1.524.117-3.176c0 0 1.008-.322 3.301 1.23c.957-.266 1.983-.399 3.003-.404c1.02.005 2.047.138 3.006.404c2.291-1.552 3.297-1.23 3.297-1.23c.653 1.653.242 2.874.118 3.176c.77.84 1.235 1.911 1.235 3.221c0 4.61-2.805 5.624-5.479 5.92c.43.37.814 1.102.814 2.222c0 1.606-.015 2.896-.015 3.286c0 .315.22.69.825.57A12.013 12.013 0 0 0 24 12C24 5.373 18.627 0 12 0Z" clip-rule="evenodd" /></svg>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Rodapé --><footer class="border-t border-secondary py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Newton André Thomaz. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Feito com <span class="text-primary">&hearts;</span> e Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica para o menu mobile
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden');
+            menuIconClose.classList.toggle('hidden');
+            // Trava o scroll da página quando o menu estiver aberto
+            document.body.classList.toggle('overflow-hidden');
+        });
+
+        // Fecha o menu mobile ao clicar em um link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            });
+        });
+
+        // Lógica para rolagem suave com offset do cabeçalho
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const href = this.getAttribute('href');
+                
+                // Se for só #, não faz nada (pode ser um link de placeholder)
+                if (href === '#') return;
+
+                const targetElement = document.querySelector(href);
+                
+                if (targetElement) {
+                    const header = document.getElementById('header');
+                    const headerOffset = header ? header.offsetHeight : 0;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
